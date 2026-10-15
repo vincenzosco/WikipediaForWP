@@ -1,0 +1,106 @@
+<Page
+    x:Class="Wikipedia.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Uid="Nav_Saved" Icon="Favorite" Click="Saved_Click" />
+            <AppBarButton x:Uid="Nav_History" Icon="Clock" Click="History_Click" />
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Uid="Nav_Settings" Icon="Setting" Click="Settings_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="16,24,16,0">
+            <TextBlock
+                x:Uid="Home_Title"
+                Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock
+                x:Uid="Home_Subtitle"
+                Style="{StaticResource BodyTextBlockStyle}"
+                Opacity="0.7"
+                TextWrapping="Wrap" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="16,20,16,0">
+            <Button
+                x:Uid="Home_Search"
+                HorizontalAlignment="Stretch"
+                Click="Search_Click" />
+            <Button
+                x:Uid="Home_Random"
+                HorizontalAlignment="Stretch"
+                Margin="0,10,0,0"
+                Command="{Binding RandomCommand}" />
+
+            <!-- The random article command reports its failures through the
+                 view model. It sits under the buttons rather than in the
+                 recent list below, which owns its own top aligned text in the
+                 same grid cell and would draw over this message. -->
+            <TextBlock
+                Text="{Binding ErrorMessage}"
+                Margin="0,10,0,0"
+                TextWrapping="Wrap"
+                Opacity="0.75"
+                Visibility="{Binding HasError, Converter={StaticResource BoolToVisibility}}" />
+        </StackPanel>
+
+        <Grid Grid.Row="2" Margin="0,24,0,0">
+            <TextBlock
+                x:Uid="Home_RecentEmpty"
+                Margin="16,8,16,0"
+                VerticalAlignment="Top"
+                Opacity="0.6"
+                TextWrapping="Wrap"
+                Visibility="{Binding HasRecent, Converter={StaticResource BoolToVisibility}, ConverterParameter=invert}" />
+
+            <StackPanel Visibility="{Binding HasRecent, Converter={StaticResource BoolToVisibility}}">
+                <TextBlock
+                    x:Uid="Home_Recent"
+                    Margin="16,0,16,8"
+                    FontWeight="SemiBold" />
+
+                <ListView
+                    ItemsSource="{Binding Recent}"
+                    SelectionMode="None"
+                    IsItemClickEnabled="True"
+                    ItemClick="Recent_ItemClick">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="0,6">
+                                <Image
+                                    Width="44"
+                                    Height="44"
+                                    Margin="0,0,12,0"
+                                    Stretch="UniformToFill"
+                                    Source="{Binding ThumbnailUrl}"
+                                    Visibility="{Binding ThumbnailUrl, Converter={StaticResource EmptyStringToVisibility}}" />
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock
+                                        Text="{Binding Title}"
+                                        TextWrapping="NoWrap"
+                                        TextTrimming="CharacterEllipsis"
+                                        MaxWidth="220" />
+                                    <TextBlock
+                                        Text="{Binding ViewedAt, Converter={StaticResource RelativeTime}}"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                        Opacity="0.6" />
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

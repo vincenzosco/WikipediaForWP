@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+
+  <Identity Name="0821df1a-c7cf-4cc1-a2ff-8794cfda35fa"
+            Publisher="CN=Vincenzo"
+            Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="0821df1a-c7cf-4cc1-a2ff-8794cfda35fa" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Wikipedia</DisplayName>
+    <PublisherDisplayName>Vincenzo</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <!-- Both supported languages are listed explicitly rather than using
+       x-generate. The resource qualifier system picks the matching Strings
+       folder at run time and falls back to the package default, en-US. -->
+  <Resources>
+    <Resource Language="en-US" />
+    <Resource Language="it-IT" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="Wikipedia.App">
+        <!-- Charcoal tile background. The logo mark is light grey, so a
+             transparent background would let a light accent colour swallow it
+             whole; a fixed dark background keeps the mark legible whatever
+             accent the user picked, and matches the splash screen. -->
+        <m3:VisualElements
+            DisplayName="Wikipedia"
+            Square150x150Logo="Assets\Logo.png"
+            Square44x44Logo="Assets\SmallLogo.png"
+            Description="Wikipedia"
+            ForegroundText="light"
+            BackgroundColor="#1C1C1C">
+            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
+            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
+        </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <!-- Outbound requests only: the app reads the Wikipedia API and
+         thumb.wikimedia.org and never accepts an inbound connection, so the
+         narrower capability is the correct one. -->
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

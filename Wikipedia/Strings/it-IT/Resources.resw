@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Navigazione -->
+  <data name="Nav_Saved.Label" xml:space="preserve">
+    <value>Salvati</value>
+  </data>
+  <data name="Nav_History.Label" xml:space="preserve">
+    <value>Cronologia</value>
+  </data>
+  <data name="Nav_Settings.Label" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+
+  <!-- Home -->
+  <data name="Home_Title.Text" xml:space="preserve">
+    <value>Wikipedia</value>
+  </data>
+  <data name="Home_Subtitle.Text" xml:space="preserve">
+    <value>Leggi Wikipedia nella tua lingua, salva le voci per leggerle offline e cerca tra milioni di articoli.</value>
+  </data>
+  <data name="Home_Search.Content" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="Home_Random.Content" xml:space="preserve">
+    <value>Voce casuale</value>
+  </data>
+  <data name="Home_Recent.Text" xml:space="preserve">
+    <value>LETTE DI RECENTE</value>
+  </data>
+  <data name="Home_RecentEmpty.Text" xml:space="preserve">
+    <value>Le voci che apri compariranno qui.</value>
+  </data>
+
+  <!-- Ricerca -->
+  <data name="Search_Title.Text" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="SearchBox.PlaceholderText" xml:space="preserve">
+    <value>Cerca su Wikipedia</value>
+  </data>
+  <data name="Search_Go.Content" xml:space="preserve">
+    <value>Vai</value>
+  </data>
+  <data name="Search_Hint.Text" xml:space="preserve">
+    <value>Digita un termine e premi Invio per cercare.</value>
+  </data>
+  <data name="Search_NoResults" xml:space="preserve">
+    <value>Nessun risultato. Prova con un altro termine.</value>
+  </data>
+
+  <!-- Voce -->
+  <data name="Article_Retry.Content" xml:space="preserve">
+    <value>Riprova</value>
+  </data>
+  <data name="Article_Share.Label" xml:space="preserve">
+    <value>Condividi</value>
+  </data>
+  <data name="Article_Pin.Label" xml:space="preserve">
+    <value>Aggiungi a Start</value>
+  </data>
+  <data name="Article_Random.Label" xml:space="preserve">
+    <value>Voce casuale</value>
+  </data>
+  <data name="Article_Save" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="Article_Unsave" xml:space="preserve">
+    <value>Salvata</value>
+  </data>
+  <data name="Article_Sections" xml:space="preserve">
+    <value>SEZIONI</value>
+  </data>
+  <data name="Share_Description" xml:space="preserve">
+    <value>Voce di Wikipedia</value>
+  </data>
+
+  <!-- Salvati -->
+  <data name="Saved_Title.Text" xml:space="preserve">
+    <value>Salvati</value>
+  </data>
+  <data name="Saved_Remove.Content" xml:space="preserve">
+    <value>Rimuovi</value>
+  </data>
+  <data name="Saved_Empty" xml:space="preserve">
+    <value>Le voci che salvi compariranno qui e resteranno leggibili offline.</value>
+  </data>
+
+  <!-- Cronologia -->
+  <data name="History_Title.Text" xml:space="preserve">
+    <value>Cronologia</value>
+  </data>
+  <data name="History_Clear.Label" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="History_Empty" xml:space="preserve">
+    <value>Nessuna voce letta.</value>
+  </data>
+
+  <!-- Impostazioni -->
+  <data name="Settings_Title.Text" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="Settings_LanguageTitle.Text" xml:space="preserve">
+    <value>Lingua dei contenuti</value>
+  </data>
+  <data name="Settings_LanguageSearch.PlaceholderText" xml:space="preserve">
+    <value>Cerca una lingua o un codice, ad esempio Giapponese o ja</value>
+  </data>
+  <data name="Settings_FollowDevice" xml:space="preserve">
+    <value>Segui la lingua del dispositivo</value>
+  </data>
+  <data name="Settings_NoLanguageMatch.Text" xml:space="preserve">
+    <value>Nessuna edizione corrisponde al testo cercato.</value>
+  </data>
+  <data name="Settings_LanguageIncomplete.Text" xml:space="preserve">
+    <value>Non è stato possibile scaricare l'elenco completo delle edizioni. Connettiti a Internet e riapri questa schermata.</value>
+  </data>
+  <data name="Settings_LanguageChanged" xml:space="preserve">
+    <value>Ora leggi: {0}</value>
+  </data>
+  <data name="Settings_FontSize.Header" xml:space="preserve">
+    <value>Dimensione testo</value>
+  </data>
+  <data name="Settings_FontSmall.Content" xml:space="preserve">
+    <value>Piccolo</value>
+  </data>
+  <data name="Settings_FontNormal.Content" xml:space="preserve">
+    <value>Normale</value>
+  </data>
+  <data name="Settings_FontLarge.Content" xml:space="preserve">
+    <value>Grande</value>
+  </data>
+  <data name="Settings_HistoryEnabled.Header" xml:space="preserve">
+    <value>Conserva la cronologia</value>
+  </data>
+  <data name="Settings_ClearHistory.Content" xml:space="preserve">
+    <value>Cancella cronologia</value>
+  </data>
+  <data name="Settings_ClearCache.Content" xml:space="preserve">
+    <value>Cancella cache offline</value>
+  </data>
+  <data name="Settings_CurrentLanguage" xml:space="preserve">
+    <value>Lingua corrente: {0}</value>
+  </data>
+  <data name="Settings_HistoryCleared" xml:space="preserve">
+    <value>Cronologia cancellata.</value>
+  </data>
+  <data name="Settings_CacheCleared" xml:space="preserve">
+    <value>Cache offline cancellata.</value>
+  </data>
+
+  <!-- Tempo relativo -->
+  <data name="Time_JustNow" xml:space="preserve">
+    <value>adesso</value>
+  </data>
+  <data name="Time_MinutesAgo" xml:space="preserve">
+    <value>{0} minuti fa</value>
+  </data>
+  <data name="Time_HoursAgo" xml:space="preserve">
+    <value>{0} ore fa</value>
+  </data>
+  <data name="Time_DaysAgo" xml:space="preserve">
+    <value>{0} giorni fa</value>
+  </data>
+
+  <!-- Errori -->
+  <data name="Error_Offline" xml:space="preserve">
+    <value>Sei offline. Controlla la connessione e riprova.</value>
+  </data>
+  <data name="Error_Generic" xml:space="preserve">
+    <value>Si è verificato un errore. Riprova.</value>
+  </data>
+  <data name="Error_NotFound" xml:space="preserve">
+    <value>Voce non trovata.</value>
+  </data>
+  <data name="Error_PinFailed" xml:space="preserve">
+    <value>Impossibile aggiungere la voce a Start.</value>
+  </data>
+</root>

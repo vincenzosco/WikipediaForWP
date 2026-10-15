@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Navigation -->
+  <data name="Nav_Saved.Label" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Nav_History.Label" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Nav_Settings.Label" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+
+  <!-- Home -->
+  <data name="Home_Title.Text" xml:space="preserve">
+    <value>Wikipedia</value>
+  </data>
+  <data name="Home_Subtitle.Text" xml:space="preserve">
+    <value>Read Wikipedia in your language, save articles for offline reading and search millions of entries.</value>
+  </data>
+  <data name="Home_Search.Content" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Home_Random.Content" xml:space="preserve">
+    <value>Random article</value>
+  </data>
+  <data name="Home_Recent.Text" xml:space="preserve">
+    <value>RECENTLY READ</value>
+  </data>
+  <data name="Home_RecentEmpty.Text" xml:space="preserve">
+    <value>Articles you open will appear here.</value>
+  </data>
+
+  <!-- Search -->
+  <data name="Search_Title.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchBox.PlaceholderText" xml:space="preserve">
+    <value>Search Wikipedia</value>
+  </data>
+  <data name="Search_Go.Content" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="Search_Hint.Text" xml:space="preserve">
+    <value>Type a term and press Enter to search.</value>
+  </data>
+  <data name="Search_NoResults" xml:space="preserve">
+    <value>No results found. Try a different term.</value>
+  </data>
+
+  <!-- Article -->
+  <data name="Article_Retry.Content" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="Article_Share.Label" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="Article_Pin.Label" xml:space="preserve">
+    <value>Pin to Start</value>
+  </data>
+  <data name="Article_Random.Label" xml:space="preserve">
+    <value>Random article</value>
+  </data>
+  <data name="Article_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Article_Unsave" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Article_Sections" xml:space="preserve">
+    <value>SECTIONS</value>
+  </data>
+  <data name="Share_Description" xml:space="preserve">
+    <value>Wikipedia article</value>
+  </data>
+
+  <!-- Saved -->
+  <data name="Saved_Title.Text" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Saved_Remove.Content" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Saved_Empty" xml:space="preserve">
+    <value>Articles you save will appear here and stay readable offline.</value>
+  </data>
+
+  <!-- History -->
+  <data name="History_Title.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="History_Clear.Label" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="History_Empty" xml:space="preserve">
+    <value>No articles read yet.</value>
+  </data>
+
+  <!-- Settings -->
+  <data name="Settings_Title.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Settings_LanguageTitle.Text" xml:space="preserve">
+    <value>Content language</value>
+  </data>
+  <data name="Settings_LanguageSearch.PlaceholderText" xml:space="preserve">
+    <value>Search a language or code, such as Japanese or ja</value>
+  </data>
+  <data name="Settings_FollowDevice" xml:space="preserve">
+    <value>Follow device language</value>
+  </data>
+  <data name="Settings_NoLanguageMatch.Text" xml:space="preserve">
+    <value>No edition matches that text.</value>
+  </data>
+  <data name="Settings_LanguageIncomplete.Text" xml:space="preserve">
+    <value>The full list of editions could not be downloaded. Connect to the internet and open this screen again.</value>
+  </data>
+  <data name="Settings_LanguageChanged" xml:space="preserve">
+    <value>Now reading: {0}</value>
+  </data>
+  <data name="Settings_FontSize.Header" xml:space="preserve">
+    <value>Text size</value>
+  </data>
+  <data name="Settings_FontSmall.Content" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Settings_FontNormal.Content" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Settings_FontLarge.Content" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="Settings_HistoryEnabled.Header" xml:space="preserve">
+    <value>Keep reading history</value>
+  </data>
+  <data name="Settings_ClearHistory.Content" xml:space="preserve">
+    <value>Clear history</value>
+  </data>
+  <data name="Settings_ClearCache.Content" xml:space="preserve">
+    <value>Clear offline cache</value>
+  </data>
+  <data name="Settings_CurrentLanguage" xml:space="preserve">
+    <value>Current language: {0}</value>
+  </data>
+  <data name="Settings_HistoryCleared" xml:space="preserve">
+    <value>History cleared.</value>
+  </data>
+  <data name="Settings_CacheCleared" xml:space="preserve">
+    <value>Offline cache cleared.</value>
+  </data>
+
+  <!-- Relative time -->
+  <data name="Time_JustNow" xml:space="preserve">
+    <value>just now</value>
+  </data>
+  <data name="Time_MinutesAgo" xml:space="preserve">
+    <value>{0} minutes ago</value>
+  </data>
+  <data name="Time_HoursAgo" xml:space="preserve">
+    <value>{0} hours ago</value>
+  </data>
+  <data name="Time_DaysAgo" xml:space="preserve">
+    <value>{0} days ago</value>
+  </data>
+
+  <!-- Errors -->
+  <data name="Error_Offline" xml:space="preserve">
+    <value>You are offline. Check your connection and try again.</value>
+  </data>
+  <data name="Error_Generic" xml:space="preserve">
+    <value>Something went wrong. Please try again.</value>
+  </data>
+  <data name="Error_NotFound" xml:space="preserve">
+    <value>That article could not be found.</value>
+  </data>
+  <data name="Error_PinFailed" xml:space="preserve">
+    <value>The article could not be pinned to Start.</value>
+  </data>
+</root>
